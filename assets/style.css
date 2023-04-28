@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    background-color: purple;
+}
+
+header  h1 {
+    font-size: 40px;
+    display: flex;
+    color: gold;
+    position: relative;
+    margin-top: -10px;
+    flex-direction: row;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+
+}
