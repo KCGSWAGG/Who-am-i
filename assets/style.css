@@ -1,15 +1,45 @@
 body {
-    display: flex;
-    background-color: purple;
+    background-color: white;
 }
 
-header  h1 {
-    font-size: 40px;
+header {
+    display: block;
+    border: 1px solid black;
+   text-align: right;
+   color: black; 
+   padding: 70px;
+}
+
+header p {
+    text-align: left;
+    font-size: 200%;
+}
+   
+
+main {
     display: flex;
-    color: gold;
-    position: relative;
-    margin-top: -10px;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main h1, .about-me h1 {
+    flex: 0 0 20%;
+    
+}
+
+main section, .about-me article {
+    flex: 0 0 80%;
+   
+}
+
+.banner {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.project {
+    display: flex;
+    flex-basis: 49%;
 }
 
 section {
@@ -17,7 +47,15 @@ section {
     justify-content: center;
     flex-wrap: wrap;
 }
+div section article ul {
+    text-align: left;
+    
+}
 
 footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 200%;
 
 }
