@@ -1,61 +1,97 @@
+/* Global styles */
 body {
-    background-color: white;
-}
-
-header {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  header p {
+    margin: 0;
+  }
+  
+  /* About Me section styles */
+  .about-me {
+    padding: 20px;
+  }
+  
+  .about-me h1 {
+    font-size: 24px;
+  }
+  
+  .about-me p {
+    line-height: 1.5;
+  }
+  
+  .about-me img {
     display: block;
-    border: 1px solid black;
-   text-align: right;
-   color: black; 
-   padding: 70px;
-}
-
-header p {
-    text-align: left;
-    font-size: 200%;
-}
-   
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-main h1, .about-me h1 {
-    flex: 0 0 20%;
-    
-}
-
-main section, .about-me article {
-    flex: 0 0 80%;
-   
-}
-
-.banner {
-    width: 100%;
-    flex-basis: 100%;
-}
-
-.project {
-    display: flex;
-    flex-basis: 49%;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-div section article ul {
-    text-align: left;
-    
-}
-
-footer {
-    background-color: black;
-    color: white;
+    margin-top: 20px;
+  }
+  
+  /* Work section styles */
+  .work {
     text-align: center;
-    font-size: 200%;
-
-}
+    margin-top: 30px;
+  }
+  
+  .project {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .project a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .project img {
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Contact Me section styles */
+  .contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .contact h1 {
+    font-size: 24px;
+  }
+  
+  .contact ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact li {
+    margin-bottom: 10px;
+  }
+  
+  .contact a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
