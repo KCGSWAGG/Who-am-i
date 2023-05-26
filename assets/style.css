@@ -1,97 +1,83 @@
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header styles */
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+section {
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin-top: 10px;
+}
+
+main {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.banner, .project {
+  margin-bottom: 20px;
+}
+
+.banner a, .project a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.banner span, .project span {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
   header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    flex-direction: column;
   }
-  
-  header a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  header p {
-    margin: 0;
-  }
-  
-  /* About Me section styles */
-  .about-me {
-    padding: 20px;
-  }
-  
-  .about-me h1 {
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
     font-size: 24px;
   }
-  
-  .about-me p {
-    line-height: 1.5;
-  }
-  
-  .about-me img {
-    display: block;
-    margin-top: 20px;
-  }
-  
-  /* Work section styles */
-  .work {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .project {
-    display: inline-block;
-    margin: 20px;
-  }
-  
-  .project a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .project img {
-    width: 200px;
-    height: 150px;
-    display: block;
-    margin-top: 10px;
-  }
-  
-  /* Contact Me section styles */
-  .contact {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  .contact h1 {
-    font-size: 24px;
-  }
-  
-  .contact ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .contact li {
-    margin-bottom: 10px;
-  }
-  
-  .contact a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
+}
