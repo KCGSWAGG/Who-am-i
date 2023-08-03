@@ -4,59 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
     <title>Who am I?</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="#about">About Me</a>
-        <a href="#projects">Work</a>
-        <a href="#contact">Contact Me</a>
+    <header class="bg-blue-500 p-4 text-white flex justify-between items-center">
+        <nav>
+            <a href="#about" class="mr-4">About Me</a>
+            <a href="#projects" class="mr-4">Work</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
         <p>Tyreal Worley</p>
     </header>
 
-    <div>
+    <div class="p-4">
         <section id="about" class="about-me">
-            <h1 >About Me</h1>
-            <article> 
+            <h1 class="text-2xl font-bold">About Me</h1>
+            <article class="mt-4">
                 <p>My Name is Tyreal Worley I am 25 years old my birthday is November 14th. My favorite Sports team is Ohio state College football. 
                 I currently work for IBM as a system service representative, the role is a technical position I Fix computer, printer, servers and etc. I am from White oak North Carolina
                 I moved to charlotte at 9 years old and been here since. I went to a couple college out of highschool but i recived my assiocate degree in cyber security from ECPI.
                 A few hobbies of mine are playing Flag Football, Baksetball, streaming on twitch, Cars, and cooking. </p>
-                <img src="C:\Users\Tyreal\Pictures\me.jpg" alt="Picture of me" width="250" height="300">
+                <img src="C:\Users\Tyreal\Pictures\me.jpg" alt="Picture of me" width="250" height="300" class="mt-4">
             </article>
         </section> 
-        <main>
-            <h1 id="projects" class="work">Work</h1>
-            <section>
-                <div class="banner"><a href="https://kcgswagg.github.io/css-cheatsheet/">
-                    <span> CSS Cheatseet</span>
-                    <img src="images/cheatsheety.png" alt="Placeholder">
+        <main class="p-4">
+            <h1 id="projects" class="work text-2xl font-bold">Work</h1>
+            <section class="grid grid-cols-2 gap-4 mt-4">
+                <div class="banner bg-gray-300 p-4 rounded-lg">
+                    <a href="https://kcgswagg.github.io/css-cheatsheet/" class="text-blue-500">
+                        <span class="font-bold">CSS Cheatseet</span>
+                        <img src="images/cheatsheety.png" alt="Placeholder" class="mt-2">
                     </a>
                 </div>
-                <div class="project"><a href="https://kcgswagg.github.io/horizon-refactor/#online-reputation-management">
-                    <span>Horiseon</span>
-                    <img src="images/horiseon.png" alt="Placeholder">
+                <div class="project bg-gray-300 p-4 rounded-lg">
+                    <a href="https://kcgswagg.github.io/horizon-refactor/#online-reputation-management" class="text-blue-500">
+                        <span class="font-bold">Horiseon</span>
+                        <img src="images/horiseon.png" alt="Placeholder" class="mt-2">
                     </a>
                 </div>
-                <div class="tracker"><a href="https://kcgswagg.github.io/sports-tracker/">
-                    <span>Sports Tracker</span>
-                    <img src="images/group project.png" alt="Placeholder">
+                <div class="tracker bg-gray-300 p-4 rounded-lg">
+                    <a href="https://kcgswagg.github.io/sports-tracker/" class="text-blue-500">
+                        <span class="font-bold">Sports Tracker</span>
+                        <img src="images/group project.png" alt="Placeholder" class="mt-2">
+                    </a>
+                </div>
+                <div class="Student bg-gray-300 p-4 rounded-lg">
+                    <a href="https://shielded-everglades-30738-44134476de15.herokuapp.com" class="text-blue-500">
+                        <span class="font-bold">Student Marks</span>
+                        <img src="images/student marks pic.png" alt="Placeholder" class="mt-2">
                     </a>
                 </div>
             </section>
         </main>
-        <section id="contact" class="contact me">
-            <h1>Contact Me</h1>
-             <article>
+        <section id="contact" class="contact me p-4">
+            <h1 class="text-2xl font-bold">Contact Me</h1>
+             <article class="mt-4">
                 <ul>
-                    <li>Phone number: 704-458-1553 </li>
+                    <li>Phone number: 704-458-1553</li>
                     <li>Email: TyrealWorley999@yahoo.com</li>
-                    <li><a href="https://www.linkedin.com/in/tyreal-worley-72b544185/"> linkedin</a></li>
+                    <li><a href="https://www.linkedin.com/in/tyreal-worley-72b544185/" class="text-blue-500">linkedin</a></li>
                 </ul>
             </article>
         </section>
     </div>
-    <footer>Thanks for stopping by have a nice day!!</footer>
+    <footer class="bg-gray-300 p-4 text-center">Thanks for stopping by have a nice day!!</footer>
 </body>
 </html>
